@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+    font-family: "Poppins","sans-serif";
+    color:#0f035c;
+}
+body{
+    background-color: #07283d;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border:1px solid black;
+    width:350px;
+    height:auto;
+    border-radius: 10px;
+    padding:20px 15px;
+    /* background-color: #dadada; */
+    background: linear-gradient(180deg, #92f8ff, #8793db);
+    transition-duration: all 3s ease-in;
+}
+
+/* Styling the seach box */
+
+.search-box{
+    /* background-color: brown; */
+    display:flex;    
+    align-items: center;
+    justify-content: flex-start;
+    gap:5px;
+    position: relative;
+}
+.search-box span{
+    font-size: 28px;
+}
+.search-box input{
+    margin-right: 10px;
+    padding:5px 10px;
+    border:.1px solid rgba(128, 128, 128, 0.411);
+    outline:none;
+    border-radius: 10px;
+    font-size: 18px;
+    flex:1;
+    font-weight: 500;
+    background-color: transparent;
+}
+.search-box .searchicon{
+    position:absolute;
+    right:20px;
+    cursor:pointer;
+    padding:3px;
+}
+.search-box .searchicon:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+
+/* styling the details section */
+
+.detailsbox{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    /* background-color: white; */
+    text-align: center;
+    display:none;
+    
+}
+.bottomDivs{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.humidity ,.windSpeed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width:200px;
+}
+.temp h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.temp h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.humidityImg img, .windImg img{
+    margin-right: 10px;
+    width:40px;
+}
+
+.humiDetails,.windDetails {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: left;
+}
+.humiDetails h1,.windDetails h1{
+    font-size: 1.5rem;
+    font-weight: 500;    
+}
